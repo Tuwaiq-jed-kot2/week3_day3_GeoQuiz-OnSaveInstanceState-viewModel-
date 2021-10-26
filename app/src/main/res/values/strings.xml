@@ -1,11 +1,29 @@
 <resources>
     <string name="app_name">GeoQuiz</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
+    // questions
+    <string name="first_question"> the capital of KSA is Riyadh  </string>
+    <string name="second_question"> KSA is in africa  </string>
+    <string name="third_question"> your name is ahmed  </string>
+    <string name="fourth_question"> KSa has the second largest desert in the world  </string>
+    <string name="fifth_question"> KSA population is less than 30 million  </string>
+    <string name="sixth_question"> KIA is a south korean car company  </string>
+
+    <string name="score_Tv">score: 0/6</string>
+
+    // buttons
+
     <string name="true_button">True</string>
     <string name="false_button">False</string>
+    <string name="next_question_button"> }</string>
+    <string name="previous_question_button"> {</string>
+
+    // toasts
     <string name="correct_toast">Correct !!</string>
     <string name="incorrect_toast">Incorrect!!</string>
+    <string name="negative_index">this is the first question</string>
+    <string name="maximum_index">this is the last question</string>
+    <string name="question_writer">anas</string>
 
 
 </resources>

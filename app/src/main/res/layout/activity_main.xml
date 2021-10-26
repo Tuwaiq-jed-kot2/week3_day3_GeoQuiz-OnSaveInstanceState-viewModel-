@@ -1,40 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/dark_blue">
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:text="@string/question_text"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/answer_ic"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_right"
+            android:visibility="invisible"/>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/geo"
+            android:text="Score: "
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/geo"
+            tools:text="0"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="70sp" />
+
+        <TextView
+            android:id="@+id/outOf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="@font/geo"
+            android:text=" /10"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="70sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question_tV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_semibold"
+        android:padding="10dp"
+        tools:text="@string/first_question"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/writerTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/cairo_semibold"
+        tools:text="Rana"
+        android:textAlignment="center"
+        android:textColor="@color/light_blue"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30dp"
+        android:orientation="vertical">
 
         <Button
             android:id="@+id/true_button"
-            android:layout_width="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/true_button" />
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/cairo_semibold"
+            android:text="@string/true_button"
+            android:textColor="@color/dark_blue" />
 
         <Button
             android:id="@+id/false_button"
-            android:layout_width="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/false_button" />
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/cairo_semibold"
+            android:text="@string/false_button"
+            android:textColor="@color/dark_blue" />
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/back_question"
+            android:layout_width="120dp"
+            android:layout_marginEnd="10dp"
+            android:layout_height="wrap_content"
+            android:text="@string/previous_Button"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/dark_blue" />
+
+        <Button
+            android:id="@+id/next_question"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next_question"
+            android:backgroundTint="@color/light_blue"
+            android:fontFamily="@font/cairo_semibold"
+            android:textColor="@color/dark_blue" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/try_again_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/geo"
+        android:text="@string/try_again"
+        android:textColor="@color/light_blue"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/try_again_btn"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="@string/try_again_btn"
+        android:backgroundTint="@color/light_blue"
+        android:fontFamily="@font/cairo_semibold"
+        android:textColor="@color/dark_blue"
+        android:visibility="invisible"/>
+
+
 </LinearLayout>

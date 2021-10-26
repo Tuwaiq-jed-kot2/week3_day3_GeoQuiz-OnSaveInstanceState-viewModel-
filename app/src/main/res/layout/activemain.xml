@@ -1,10 +1,9 @@
-?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="bottom"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -16,6 +15,16 @@
         android:padding="24dp"
         tools:text="@string/first_question" />
 
+    <TextView
+        android:id="@+id/instructorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        tools:text="instrutorName" />
+
+
+
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,7 +34,6 @@
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
             android:layout_weight="1"
             android:contentDescription="@string/false_button"
             android:text="@string/false_button" />
@@ -39,26 +47,36 @@
             android:text="@string/true_button" />
 
 
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/next_question"
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/nextbutton" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/nextbutton" />
+        <Button
+            android:id="@+id/next_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nextbutton" />
 
-    <Button
-        android:layout_width="123dp"
-        android:layout_height="wrap_content"
-        android:rotationX="-10"
-        android:text="@string/backbutton"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:visibility="visible" />
+        <Button
+            android:id="@+id/back_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/backbutton" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:rotationX="-12"
+            android:textSize="12sp"
+            android:verticalScrollbarPosition="left"
+            app:icon="@android:drawable/arrow_up_float" />
+
+    </LinearLayout>
 
 </LinearLayout>

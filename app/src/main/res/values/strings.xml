@@ -8,7 +8,7 @@
     <string name="fifth_question"> 1 + 1 = 2 ?</string>
     <string name="six_question">2 * 2 = 3 ?</string>
     <string name="seven_question">5 * 2 = 10 ?</string>
-    <string name="question_author">instructor: Abdulghani</string>
+    <string name="question_instructor">instructor: Abdulghani</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="correct_toast">Correct !!</string>

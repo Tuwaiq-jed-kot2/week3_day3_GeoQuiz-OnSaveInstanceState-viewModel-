@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/menoa/AndroidStudioProjects/week3_day3_GeoQuiz-OnSaveInstanceState-viewModel-/app/src/main/res/layout-land/activty_main.xml" value="0.1728395061728395" />
+        <entry key="..\:/Users/menoa/AndroidStudioProjects/week3_day3_GeoQuiz-OnSaveInstanceState-viewModel-/app/src/main/res/layout-port/activty_main.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/menoa/AndroidStudioProjects/week3_day3_GeoQuiz-OnSaveInstanceState-viewModel-/app/src/main/res/layout/activity_main.xml" value="0.192481884057971" />
+        <entry key="..\:/Users/menoa/AndroidStudioProjects/week3_day3_GeoQuiz-OnSaveInstanceState-viewModel-/app/src/main/res/layout/activti.xml" value="0.192481884057971" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25" />
       </map>
     </option>

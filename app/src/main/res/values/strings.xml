@@ -1,11 +1,21 @@
 <resources>
-    <string name="app_name">GeoQuiz</string>
+    <string name="app_name">Geoquiz</string>
+    <string name="first_question">the capital of KSA is Hail</string>
+    <string name="second_question">KSA is in Africa </string>
+    <string name="third_question"> your name is Ahmed</string>
+    <string name="forth_question">your in Jeddah</string>
+    <string name="fifth_question">your a boy</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
-    <string name="true_button">True</string>
-    <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+
+
+    <string name="true_Button">true</string>
+    <string name="fales_Button">false</string>
+    <string name="correct_toast">correct!!</string>
+    <string name="incorrect_toast">incorrect!!</string>
+    <string name="next">next</string>
+    <string name="back">back</string>
+    <string name="my_name">my_name</string>
+
 
 
 </resources>

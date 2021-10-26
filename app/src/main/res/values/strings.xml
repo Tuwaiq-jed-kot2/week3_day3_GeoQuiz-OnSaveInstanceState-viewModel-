@@ -1,11 +1,37 @@
 <resources>
-    <string name="app_name">GeoQuiz</string>
+    <string name="app_name">Geoquiz</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
-    <string name="true_button">True</string>
-    <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="first_question"> the capital of KSA is Riyadh? </string>
 
 
+    <string name="second_question"> Ksa in Africa? </string>
+
+    <string name="third_question"> your name Anas? </string>
+
+    <string name="forth_question"> your name 22 age? </string>
+
+
+    <string name="fifth_question"> is Saudi Arabia the largest country? </string>
+
+    <string name="sixth_question"> is Kotlin the best language? </string>
+
+    <string name="true_btn"> True </string>
+
+    <string name="false_btn"> False </string>
+
+    <string name="correct_toast"> correct </string>
+
+    <string name="incorrect_toast"> incorrect </string>
+    <string name="nextButton">Button</string>
+
+    <string name="instructorName"> By Sara </string>
+
+    <string name="cheatButton"> Cheat</string>
+
+    <string name="showAnswerButton">show Answer </string>
+    <string name="jugmentToast"> cheating is wrong  </string>
+    <string name="warningMsg"> ERROR.. </string>
+
+
+    //لما يقول اضف ريسورس نص
 </resources>

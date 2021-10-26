@@ -1,11 +1,14 @@
 <resources>
     <string name="app_name">GeoQuiz</string>
-
-    <string name="question_text"> the capital of KSA is Hail  </string>
-    <string name="true_button">True</string>
-    <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
-
-
+    <string name="first_question"> the capital of KSA is riyadh </string>
+    <string name="second_question"> KSA is in africa</string>
+    <string name="third_question"> your name is ahmed </string>
+    <string name="forth_question"> kotlin is better than java </string>
+    <string name="fifth_question"> Saudi Arabia has the largest oil reserves </string>
+    <string name="true_Button"> True </string>
+    <string name="false_Button"> False </string>
+    <string name="correct_toast"> correct </string>
+    <string name="incorrect_toast"> incorrect  </string>
+    <string name="EmptyNext"> there is no questions left  </string>
+    <string name="EmptyBack"> there is no previous question  </string>
 </resources>

@@ -1,13 +1,10 @@
 package com.example.geoquiz
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.util.Log
-import android.view.Gravity
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
-import java.lang.IllegalStateException
 
 private const val KEY_INDEX : String ="INDEX"
 
@@ -28,7 +25,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //to save current question
+
         val currentIndex = savedInstanceState?.getInt(KEY_INDEX) ?:0
         QuizViewModel.currentIndex = currentIndex
 

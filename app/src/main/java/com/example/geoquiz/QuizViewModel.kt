@@ -23,7 +23,7 @@ class QuizViewModel : ViewModel() {
         get() =  questionBank[currentIndex].answer
 
     val currentAuthor : String
-            get() = questionBank[currentIndex].instructor
+        get() = questionBank[currentIndex].author
 
     fun nextQuestion(){
         currentIndex = (++currentIndex) % questionBank.size

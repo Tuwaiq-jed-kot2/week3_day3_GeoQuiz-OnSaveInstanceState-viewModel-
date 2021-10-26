@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var falseButton: Button
     private lateinit var trueButton: Button
     private lateinit var questionTextView : TextView
-    private lateinit var questionInstructor : TextView
+    private lateinit var questionAuthor : TextView
     private lateinit var preArrow : ImageView
     private lateinit var nextArrow : ImageView
 
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         falseButton = findViewById(R.id.false_button)
         trueButton = findViewById(R.id.true_button)
         questionTextView = findViewById(R.id.question_Tv)
-        questionInstructor = findViewById(R.id.question_author)
+        questionAuthor = findViewById(R.id.question_author)
         preArrow = findViewById(R.id.pre_arrow)
         nextArrow = findViewById(R.id.next_arrow)
 
@@ -135,10 +135,10 @@ class MainActivity : AppCompatActivity() {
 
     private fun updateQuestion(){
         val questionTextResId = QuizViewModel.currentQuestionText
-        val instructorTextResId = QuizViewModel.currentAuthor
+        val authorTextResId = QuizViewModel.currentAuthor
 
         questionTextView.setText(questionTextResId)
-        questionInstructor.setText(instructorTextResId)
+        questionAuthor.setText(authorTextResId)
     }
 
     private fun checkAnswer(userAnswer : Boolean) {

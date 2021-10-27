@@ -8,7 +8,13 @@
 
     <string name="my_name">by:yasmin</string>-->
 
+    <string name="first_m">the capital of KSA is Hail</string>
+    <string name="second_m">KSA is in Africa </string>
+    <string name="third_m"> your name is Ahmed</string>
+    <string name="forth_m">your in Jeddah</string>
     <string name="fifth_m">yasmin</string>-->
+
+
    <string name="true_Button">true</string>-->
    <string name="fales_Button">false</string>-->
    <string name="correct_toast">correct!!</string>-->

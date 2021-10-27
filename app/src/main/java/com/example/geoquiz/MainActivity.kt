@@ -71,7 +71,7 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt(Key_INDEX,quizOfViewModel.currentIndex)
-        outState.putInt(Key_INDEX,QuizViewModel.)
+        outState.putInt(Key_INDEX,quizOfViewModel.currentQuestionText)
     }
 
 

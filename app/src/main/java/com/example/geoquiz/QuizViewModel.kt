@@ -10,10 +10,10 @@ class QuizViewModel: ViewModel() {
 
     private val questionBank = listOf(
         Question(R.string.first_question,true,R.string.wroteTV1),
-        Question(R.string.second_question,false, R.string.wroteTV2),
-        Question(R.string.third_question,false, R.string.wroteTV3) ,
-        Question(R.string.fourth_question,true, R.string.wroteTV4),
-        Question(R.string.fifth_question,true, R.string.wroteTV5)
+        Question(R.string.second_question,false,R.string.wroteTV2),
+        Question(R.string.third_question,false,R.string.wroteTV3) ,
+        Question(R.string.fourth_question,true,R.string.wroteTV4),
+        Question(R.string.fifth_question,true,R.string.wroteTV5)
 
     )
 

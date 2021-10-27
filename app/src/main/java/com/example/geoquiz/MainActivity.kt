@@ -29,7 +29,7 @@ class MainActivity : AppCompatActivity() {
 
    private val TAG = "Main_Activity"
 
-   private val quizViewModel by lazy {  ViewModelProvider(this).get(QuizViewModel::class.java)}
+   private val quizViewModel by lazy {ViewModelProvider(this).get(QuizViewModel::class.java)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
         super.onSaveInstanceState(outState)
         Log.d(TAG,"a value has been saved")
         outState.putInt(KEY_INDEX,quizViewModel.currentIndex)
-        outState.putInt(KEY_INDEX,quizViewModel.currentQuestionText)
+        //outState.putInt(KEY_INDEX,quizViewModel.currentQuestionText)
 
     }
 
@@ -139,16 +139,14 @@ class MainActivity : AppCompatActivity() {
             val toast = Toast.makeText(this,R.string.correct_toast,Toast.LENGTH_LONG)
             toast.setGravity(Gravity.TOP,0,100)
             toast.show()
-            trueButton.isClickable=false
-            falseButton.isClickable=true
+
 
 
             }else{
             val toast = Toast.makeText(this,R.string.incorrect_toast,Toast.LENGTH_LONG)
             toast.setGravity(Gravity.TOP,0,100)
             toast.show()
-            trueButton.isClickable=true
-            falseButton.isClickable=true
+
 
 
         }

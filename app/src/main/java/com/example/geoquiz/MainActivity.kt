@@ -10,7 +10,8 @@ import androidx.lifecycle.ViewModelProvider
 
 
 private const val KEY_INDEX ="index"
-
+private const val KEY_INDEX_QUSTION ="index"
+private const val KEY_INDEX_WORTE ="index"
 class MainActivity : AppCompatActivity() {
 
     private lateinit var falseButton:Button
@@ -78,8 +79,8 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt(KEY_INDEX,quizViewModel.currentIndex)
-        outState.putInt(KEY_INDEX,quizViewModel.currentQuestionText)
-        outState.putInt(KEY_INDEX,quizViewModel.currentWroteBy)
+        outState.putInt(KEY_INDEX_QUSTION,quizViewModel.currentQuestionText)
+        outState.putInt(KEY_INDEX_WORTE,quizViewModel.currentWroteBy)
 
     }
 

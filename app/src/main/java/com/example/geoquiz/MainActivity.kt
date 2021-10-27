@@ -26,6 +26,8 @@ class MainActivity : AppCompatActivity() {
     private lateinit var preButton:Button
     private lateinit var textView:TextView
 
+
+
     val TAG ="MainActivity"
    private val quizViewModel by lazy { ViewModelProvider(this ).get(QuizViewModel::class.java)}
 

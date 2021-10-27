@@ -23,6 +23,8 @@
         android:textStyle="bold"
         tools:text="@string/first_question"
 
+
+
         />
 
     <LinearLayout

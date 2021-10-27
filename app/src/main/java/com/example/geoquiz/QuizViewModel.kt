@@ -14,6 +14,8 @@ class QuizViewModel:ViewModel() {
         Question(R.string.third_question,true,R.string.third_write),
         Question(R.string.forth_question,true,R.string.forth_write)
 
+
+
     )
    var currentIndex=0
 

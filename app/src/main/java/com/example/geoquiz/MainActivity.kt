@@ -13,6 +13,8 @@ import android.widget.ImageView
 import androidx.lifecycle.ViewModelProvider
 
 private const val KEY_INDEX = "index"
+private const val KEYINDEX="index"
+
 private const val Tag = "Main_Activity"
 
 class MainActivity : AppCompatActivity() {
@@ -72,7 +74,7 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt(KEY_INDEX, QuizViewModel.currentIndex)
-        outState.putInt(KEY_INDEX, QuizViewModel.currentQuestionText)
+        outState.putInt(KEYINDEX, QuizViewModel.currentQuestionText)
     }
 
     override fun onStart() {

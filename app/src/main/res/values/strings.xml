@@ -1,11 +1,40 @@
 <resources>
     <string name="app_name">GeoQuiz</string>
 
-    <string name="question_text"> the capital of KSA is Hail  </string>
-    <string name="true_button">True</string>
-    <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="first_question"> the capital of saudi arabia is Jeddah </string>
+    <string name="second_question">saudi arabia in south africa </string>
+    <string name="third_question">saudi arabia is not the biggest country </string>
+    <string name="forth_question"> there are 1000 people in saudi arabia </string>
+    <string name="forth_question2"> there are more then 25M people in saudi arabia</string>
+    <string name="forth_question3"> Taibah University is one of the best Universitys in saudi arabia </string>
+    <string name="forth_question4"> FAISAL program this app by him self </string>
+
+    <string name="faith_question"> FAISAL is the best one  </string>
+    <string name="quizBy">This question was written by FAISAL</string>
+    <string name="quizBy1">This question was written by Ahmed</string>
+    <string name="quizBy2">This question was written by Eman</string>
+    <string name="quizBy3">This question was written by Anas</string>
+    <string name="quizBy4">This question was written by some guy</string>
+    <string name="quizBy5">This question was written by wise man</string>
+    <string name="quizBy6">This question was written by me to me</string>
+
+
+    <string name="true_Button">True</string>
+    <string name="false_Button">False</string>
+
+    <string name="correct_toast">Correct :)</string>
+    <string name="incorrect_toast">Incorrect :( </string>
+    <string name="r_toast">sorry, we will add more question very soon </string>
+    <string name="rr_toast">This is the first question </string>
+
+
+
+
+    <string name="question_text2"> the capital of ksa is Jeddah </string>
+    <string name="nextButton">Next</string>
+    <string name="backbutton">Back</string>
+    <string name="the_answer_is">"the answer is "</string>
+
 
 
 </resources>

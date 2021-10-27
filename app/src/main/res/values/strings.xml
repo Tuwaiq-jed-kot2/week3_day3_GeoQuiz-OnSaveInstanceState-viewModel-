@@ -2,14 +2,14 @@
     <string name="app_name">GeoQuiz</string>
 
     <string name="first_question"> the capital of KSA is Hail  </string>
-    <string name="socond_question"> ksa is the large than Bahren </string>
+    <string name="socond_question"> ksa in Africa</string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
-    <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
-    <string name="instructorName">name writer:Yahya Ahmad</string>
+    <string name="correct_toast">inCorrect !!</string>
+    <string name="incorrect_toast">correct!!</string>
+    <string name="instructorName">BY Sara Alghamdi </string>
 
-    <string name="button_next" >Next</string>
+    <string name="button_next" >NXT</string>
 
 
 </resources>

@@ -24,6 +24,9 @@ class MainActivity : AppCompatActivity() {
     private lateinit var instructorName :TextView
 
 
+
+
+
      val TAG ="Main_Activity"
 
     val quizOfViewModel by lazy {ViewModelProvider(this) .get(QuizViewModel::class.java)}
@@ -110,6 +113,8 @@ class MainActivity : AppCompatActivity() {
 
         if (userAnswer==correctAnswer){
             Toast.makeText(this, R.string.correct_toast, Toast.LENGTH_SHORT).show()
+
+
 
 
         }else{

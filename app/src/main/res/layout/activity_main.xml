@@ -12,6 +12,7 @@
         android:id="@+id/first_question"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="#989090"
         android:padding="24dp"
         android:text="the capital of KSA is Hail"
         android:textAlignment="center"
@@ -42,7 +43,10 @@
         android:id="@+id/instructorName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/instructorName" />
+        android:layout_margin="2dp"
+        android:layout_marginLeft="2dp"
+        android:text="@string/instructorName"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/button_next"

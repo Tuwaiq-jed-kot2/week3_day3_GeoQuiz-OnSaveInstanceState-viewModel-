@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/instructor_Tv"
         android:layout_width="wrap_content"
@@ -23,8 +24,7 @@
         android:id="@+id/question_Tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:padding="50dp"
+        android:padding="10dp"
         android:textAlignment="center"
         android:textColor="#5E35B1"
         android:textSize="24sp"
@@ -33,12 +33,10 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp">
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/true_button"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="19dp"
@@ -49,7 +47,6 @@
 
         <Button
             android:id="@+id/false_button"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="19dp"
@@ -62,30 +59,24 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="30dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/back_button"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#938A9B"
-            android:text="@string/back_button"
-            tools:ignore="TextContrastCheck" />
+            android:layout_gravity="start"
+            android:layout_margin="20dp"
+            android:text="@string/back_button" />
 
         <Button
             android:id="@+id/next_question"
-            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:backgroundTint="#918A9A"
-            android:text="@string/nextButton"
-            tools:ignore="TextContrastCheck" />
-
-
-
+            android:layout_gravity="end"
+            android:layout_margin="20dp"
+            android:text="@string/nextButton" />
     </LinearLayout>
 
 </LinearLayout>

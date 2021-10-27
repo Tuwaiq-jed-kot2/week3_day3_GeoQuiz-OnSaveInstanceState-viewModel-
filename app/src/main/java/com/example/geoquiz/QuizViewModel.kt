@@ -25,6 +25,9 @@ class QuizViewModel:ViewModel() {
         )
      var currentIndex=0
 
+    val currentQuestionText : Int
+        get () = questionBank[currentIndex].textResId
+
 
 
     val currentQuestionAnswer:Boolean

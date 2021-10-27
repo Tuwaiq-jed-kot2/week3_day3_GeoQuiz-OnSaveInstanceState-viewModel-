@@ -8,10 +8,10 @@
     android:backgroundTint="#D69F9F"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    >
 
     <EditText
-        android:id="@+id/TextView"
+        android:id="@+id/TTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"

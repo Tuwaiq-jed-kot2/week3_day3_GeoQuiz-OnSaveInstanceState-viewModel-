@@ -14,6 +14,7 @@ import androidx.lifecycle.ViewModelProvider
     private const val KAY_INDEX = "index"
 
 private const val Key_INDEX = "index"
+private const val Key_INDEX1 = "index1"
 
 class MainActivity : AppCompatActivity() {
 
@@ -74,7 +75,7 @@ class MainActivity : AppCompatActivity() {
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
         outState.putInt(Key_INDEX,quizOfViewModel.currentIndex)
-        outState.putInt(Key_INDEX,quizOfViewModel.currentQuestionText)
+        outState.putInt(Key_INDEX1,quizOfViewModel.currentQuestionText)
     }
 
 

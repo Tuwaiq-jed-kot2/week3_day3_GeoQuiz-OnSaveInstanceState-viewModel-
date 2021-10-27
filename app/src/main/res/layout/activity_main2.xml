@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#4CAF50"
+    android:backgroundTintMode="add"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/false_button"
+        android:layout_width="90sp"
+        android:layout_height="50sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginEnd="376dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/false_button"
+        android:textColorHighlight="#F44336"
+        app:strokeColor="#009688"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/true_button"
+        android:layout_width="90sp"
+        android:layout_height="50sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="275dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#009688"
+        android:text="@string/true_button"
+        app:strokeColor="#009688"
+        tools:ignore="TextContrastCheck" />
+
+    <TextView
+        android:id="@+id/question_Tv"
+        android:layout_width="456dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="138dp"
+        android:background="#FAF8F8"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:padding="24dp"
+        android:textColor="#323030"
+        android:textColorHighlight="#00BCD4"
+        android:textColorHint="#020000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:text="@string/first_question" />
+
+    <Button
+        android:id="@+id/next_question"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="83dp"
+        android:backgroundTint="#E53935"
+        android:text="@string/nextButton"
+        android:textColor="#000000"
+        android:visibility="visible"
+        tools:ignore="TextContrastCheck" />
+
+    <Button
+        android:id="@+id/previous"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:layout_marginStart="7sp"
+        android:layout_marginBottom="83sp"
+        android:backgroundTint="#FDD835"
+        android:text="@string/back_button"
+        android:textColor="#000000"
+        android:visibility="visible"
+        tools:ignore="TextContrastCheck" />
+
+</RelativeLayout>

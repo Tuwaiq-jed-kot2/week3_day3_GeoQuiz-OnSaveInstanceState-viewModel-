@@ -9,13 +9,13 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/question_Tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="24dp"
-        android:text="@string/question_text"
+        android:padding="34dp"
+        android:text="@string/first_question"
         android:textAlignment="center"
-        android:textColor="#000000"
+        android:textColor="#673AB7"
         android:textSize="24sp" />
 
     <LinearLayout
@@ -28,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="@string/true_button" />
+            android:text="@string/true_button"
+            style="?android:attr/buttonBarButtonStyle" />
 
         <Button
             android:id="@+id/false_button"
@@ -37,4 +38,22 @@
             android:layout_weight="1"
             android:text="@string/false_button" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/next_qution"
+        android:layout_width="102dp"
+        android:layout_height="wrap_content"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/previous_qution"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:text="@string/previous" />
+
+    <TextView
+        android:id="@+id/wroteBy"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:text="@string/first_wrote_By" />
 </LinearLayout>

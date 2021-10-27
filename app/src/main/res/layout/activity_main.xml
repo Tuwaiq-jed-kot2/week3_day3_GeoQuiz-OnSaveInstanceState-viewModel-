@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#009688"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+
+    tools:context=".MainActivity"
+    tools:ignore="ExtraText">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/question_Tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="24dp"
-        android:text="@string/question_text"
+        tools:text="@string/first_question"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textColor="#CDCDCD"
+        android:textSize="17sp"/>
+
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -24,17 +27,55 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/true_button"
+            android:id="@+id/false_button"
+            style="?android:attr/buttonBarButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:layout_weight="1"
-            android:text="@string/true_button" />
+            android:backgroundTint="#05675E"
+            android:text="@string/false_button"
+            android:textColor="#CDCDCD" />
 
         <Button
-            android:id="@+id/false_button"
-            android:layout_width="wrap_content"
+            android:id="@+id/true_button"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="78dp"
             android:layout_height="wrap_content"
+            android:layout_margin="15dp"
             android:layout_weight="1"
-            android:text="@string/false_button" />
+            android:backgroundTint="#05675E"
+            android:text="@string/true_button"
+            android:textColor="#CDCDCD" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/next_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="#05675E"
+        android:text="@string/next" />
+
+    <Button
+        android:id="@+id/previous_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:backgroundTint="#05675E"
+        android:text="@string/previous" />
+
+    <EditText
+        android:id="@+id/instructor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/instructor"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF" />
+
+
+
+
 </LinearLayout>

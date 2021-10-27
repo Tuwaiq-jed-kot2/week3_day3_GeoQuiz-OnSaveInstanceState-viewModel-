@@ -1,11 +1,19 @@
 <resources>
     <string name="app_name">GeoQuiz</string>
-
-    <string name="question_text"> the capital of KSA is Hail  </string>
+    <string name="first_question">The capital of KAS is Riyadh</string>
+    <string name="second_question">KAS is located in Africa</string>
+    <string name="third_question">Australia is smallest continent in the world </string>
+    <string name="forth_question">Madagascar is surrounded by pacific ocean  </string>
+    <string name="fifth_question">The US consists of 50 states  </string>
     <string name="true_button">True</string>
     <string name="false_button">False</string>
+    <string name="previous_button">previous</string>
     <string name="correct_toast">Correct !!</string>
-    <string name="incorrect_toast">Incorrect!!</string>
+    <string name="incorrect_toast">Incorrect !!</string>
+    <string name="next_button">Next</string>
+    <string name="instructor">Shuruq_Alharthi</string>
+    <string name="next">next</string>
+    <string name="previous">previous</string>
 
 
 </resources>

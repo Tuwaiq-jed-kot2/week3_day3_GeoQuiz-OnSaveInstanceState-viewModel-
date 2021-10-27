@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var nextButton:Button
     private lateinit var backButton:Button
     private lateinit var questinTextView:TextView
-    private lateinit var me:TextView
+    private lateinit var myName:TextView
 
     private var currevtIndex = 0
     //tag
@@ -37,14 +37,14 @@ class MainActivity : AppCompatActivity() {
         val currentIdex= savedInstanceState?.getInt(KEY_INDEX)?:0
         quizViewModelv.currevtIndex=currevtIndex
 
+
         Log.d(TAG,"hi im proider$quizViewModelv()")
         questinTextView= findViewById(R.id.next_question)
         questinTextView= findViewById(R.id.back_quetion)
 
 
-
+        //TextView=findViewById(R.id.)
         trueButton = findViewById(R.id.true_Botton)
-        //trueButton.isClickable(true);
         falseButton = findViewById(R.id.false_Button)
 
 
@@ -52,7 +52,7 @@ class MainActivity : AppCompatActivity() {
         questinTextView = findViewById(R.id.question_textVeiw)
         backButton = findViewById(R.id.back_quetion)
         questinTextView = findViewById(R.id.question_textVeiw)
-        me = findViewById(R.id.question_textVeiw)
+        myName=findViewById(R.id.question_textVeiw)
 
 
 
@@ -83,7 +83,9 @@ class MainActivity : AppCompatActivity() {
 
     override fun onSaveInstanceState(outState: Bundle) {
         super.onSaveInstanceState(outState)
+        outState.putInt(KEY_INDEX,quizViewModelv.currevtIndex)
         outState.putInt(KEY_INDEX,quizViewModelv.currntQuestionText)
+
     }
 
     override fun onStart() {
@@ -117,19 +119,24 @@ class MainActivity : AppCompatActivity() {
     private fun ubdateQuestion() {
         val questionTextResId = quizViewModelv.currntQuestionText
         questinTextView.setText(questionTextResId)
+
+    }
+    private fun name(){
+        val nameTextView=quizViewModelv.currentQuestionM
+        myName.setText(nameTextView)
     }
     private fun restoreQuestion() {
         val questionTextResId = quizViewModelv.currntQuestionText
         questinTextView.setText(questionTextResId)
+
     }
     private fun checkAnsewr(userAnswer: Boolean) {
-        //flag
-        //Log.d(TAG,"im from check answer :",IllegalStateException())
-        //break point
+
 
         val  correctAnswer = quizViewModelv.currentQuestionAnswer
         if (userAnswer == correctAnswer) {
-            Toast.makeText(this, R.string.correct_toast, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, R.string.correct_toast, Toast.LENGTH_LONG)
+                .show()
 
         } else {
             Toast.makeText(this, R.string.incorrect_toast, Toast.LENGTH_LONG)

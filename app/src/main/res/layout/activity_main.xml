@@ -4,19 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#E3E1AF"
+    android:backgroundTint="#E8E8D9"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/question_Tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#B2BAE6"
+        android:backgroundTint="#B1B9E6"
         android:padding="24dp"
-        android:text="@string/question_text"
         android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="24sp" />
+        android:textAllCaps="true"
+        android:textColor="#1A3D97"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:text="@string/first_question" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -27,14 +34,61 @@
             android:id="@+id/true_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/true_button" />
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#3F51B5"
+            android:text="@string/true_button"
+            android:textColor="#C2D6AB"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/false_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/false_button" />
+            android:backgroundTint="#3F51B5"
+            android:text="@string/false_button"
+            android:textColor="#BFE396"
+            android:textSize="20sp" />
+
     </LinearLayout>
+
+    <Button
+        android:id="@+id/next_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:textColor="#ADD381"
+        android:textSize="20sp"
+        app:icon="@android:drawable/ic_media_play"
+        app:iconGravity="textEnd"
+        app:iconSize="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/previous_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#3F51B5"
+        android:gravity="start"
+        android:textColor="#BDC853"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:icon="?attr/actionModeCloseDrawable"
+        app:iconSize="30dp"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/WroteTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="20dp"
+        android:background="#3F51B5"
+        android:backgroundTint="#4456BA"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textColor="#AFB42B"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        tools:text="Wrote by Anas" />
+
 </LinearLayout>

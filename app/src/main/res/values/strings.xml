@@ -26,11 +26,11 @@
 
     <string name="instructorName"> By Sara </string>
 
-    <string name="cheatButton"> Cheat</string>
+<!--    <string name="cheatButton"> Cheat</string>-->
 
-    <string name="showAnswerButton">show Answer </string>
-    <string name="jugmentToast"> cheating is wrong  </string>
-    <string name="warningMsg"> ERROR.. </string>
+<!--    <string name="showAnswerButton">show Answer </string>-->
+<!--    <string name="jugmentToast"> cheating is wrong  </string>-->
+<!--    <string name="warningMsg"> ERROR.. </string>-->
 
 
     //لما يقول اضف ريسورس نص

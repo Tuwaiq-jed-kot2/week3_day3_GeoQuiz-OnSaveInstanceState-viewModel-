@@ -6,6 +6,11 @@
     <string name="false_button">False</string>
     <string name="correct_toast">Correct !!</string>
     <string name="incorrect_toast">Incorrect!!</string>
+    <string name="do_you_want_ti_cheat">do you want ti cheat</string>
+    <string name="yes">Yes</string>
+    <string name="Q3" />
+    <string name="Q2" />
+    <string name="Q1" />
 
 
 </resources>

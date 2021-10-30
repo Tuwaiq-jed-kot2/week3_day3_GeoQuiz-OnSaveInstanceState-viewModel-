@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -18,8 +19,6 @@
         android:shadowColor="#00C0CA33"
         android:textAllCaps="false"
         android:textColor="#3949AB"
-        android:textColorHighlight="#03F4511E"
-        android:textColorHint="#8E24AA"
         android:textSize="24sp"
         android:textStyle="bold"
         tools:text="@string/first_question" />
@@ -28,15 +27,13 @@
         android:id="@+id/text_ViewWriter"
         android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:background="#8C9EFF"
+        android:background="#688C9EFF"
         android:gravity="center_horizontal"
-        android:padding="24dp"
         android:shadowColor="#00C0CA33"
         android:textAllCaps="false"
-        android:textColor="#3949AB"
+        android:textColor="#94F8F5F5"
         android:textColorHighlight="#03F4511E"
-        android:textColorHint="#8E24AA"
-        android:textSize="24sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         tools:text="@string/text_writer" />
 
@@ -53,7 +50,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:layout_weight="1"
             android:shadowColor="#B388FF"
             android:text="@string/true_button"
             android:textColor="#D0D3D5"
@@ -73,5 +69,40 @@
             android:textStyle="bold|italic" />
     </LinearLayout>
 
+    <Button
+        android:id="@+id/next_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#8C9EFF"
+        android:text="@string/nextButton"
+        android:textColor="#FD6200EA"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
 
+    <Button
+
+        android:id="@+id/back_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="20dp"
+        android:backgroundTint="#8C9EFF"
+        android:text="@string/backButton"
+        android:textColor="#FD6200EA"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
+
+    <Button
+
+        android:id="@+id/cheatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:backgroundTint="#E53935"
+        android:text="@string/cheatButton"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold|italic" />
 </LinearLayout>

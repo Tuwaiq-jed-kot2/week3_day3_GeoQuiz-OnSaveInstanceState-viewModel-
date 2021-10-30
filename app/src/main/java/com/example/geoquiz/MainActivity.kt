@@ -1,5 +1,7 @@
 package com.example.geoquiz
 
+import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,10 +11,14 @@ import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
+
 import java.lang.IllegalStateException
 
 private const val KYE_INDEX = "index"
-private const val KYE_QUESTION = "question"
+const val KYE_QUESTION = "question"
+private const val KYE_WRITER = "writer"
+const val EXTRA_ANSWER_IS_TRUE_OR_NOT="is.it.true?"
+private const val REQUEST_CODE_CHEAT = 0
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +29,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var backButton:Button
     private lateinit var textView: TextView
+    private lateinit var cheatButton:Button
 
 
 
@@ -32,6 +39,22 @@ class MainActivity : AppCompatActivity() {
     private val TAG = "Main_Activity"
 
     private val QuizViewModel by lazy { ViewModelProvider(this).get(QuizViewModel::class.java) }
+
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        Log.d(TAG,"the result code is : $requestCode")
+
+        if (resultCode!=Activity.RESULT_OK){
+            return
+        }
+        if (requestCode== REQUEST_CODE_CHEAT){
+
+            QuizViewModel.isCheater=data?.getBooleanExtra(EXTRA_ANSWER_SHOWN,false)?:false
+        }
+    }
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -43,8 +66,9 @@ class MainActivity : AppCompatActivity() {
         QuizViewModel.currentIndex = currentIndex
         val currentQuestion = savedInstanceState?.getInt(KYE_QUESTION) ?: 0
         Log.d(TAG,"hello! here is the bundle val for current question: $currentQuestion")
-        val currentQuestionWriter = QuizViewModel.textView
-        textView.setText(currentQuestionWriter)
+        //  val currentQuestionWriter = QuizViewModel?.getS(textView) ?:0
+        Log.d(TAG,"the writer is:")
+        //  textView.setText(currentQuestionWriter)
 
 
 
@@ -57,10 +81,19 @@ class MainActivity : AppCompatActivity() {
 
         falseButton=findViewById(R.id.false_button)
         trueButton=findViewById(R.id.true_button)
-        //nextButton=findViewById(R.id.next_question)
+        nextButton=findViewById(R.id.next_question)
         questionTextView=findViewById(R.id.question_Tv)
-        //backButton=findViewById(R.id.back_Button)
+        backButton=findViewById(R.id.back_Button)
         textView=findViewById(R.id.text_ViewWriter)
+        cheatButton=findViewById(R.id.cheatButton)
+
+        cheatButton.setOnClickListener(){
+            val intent = Intent(this,cheatActivity::class.java)
+            intent.putExtra(EXTRA_ANSWER_IS_TRUE_OR_NOT,QuizViewModel.currentQuestionAnswer)
+            intent.putExtra(KYE_QUESTION, QuizViewModel.currentQuestionText)
+            startActivityForResult(intent, REQUEST_CODE_CHEAT)
+
+        }
 
 
 
@@ -77,7 +110,7 @@ class MainActivity : AppCompatActivity() {
 
 
         trueButton.setOnClickListener {
-           checkAnswer(true)
+            checkAnswer(true)
         }
 
 
@@ -166,6 +199,15 @@ class MainActivity : AppCompatActivity() {
 
 
 
+
+        val toastMassage = when{
+            QuizViewModel.isCheater -> R.string.jugementToast
+            userAnswer==correctAnswer->R.string.correct_toast
+            else->R.string.incorrect_toast
+        }
+
+        Toast.makeText(this,toastMassage,Toast.LENGTH_LONG).show()
+
         if (userAnswer == correctAnswer){
             QuizViewModel.currentQuestionCheckAnswer = true
             trueButton.isClickable =false
@@ -173,11 +215,11 @@ class MainActivity : AppCompatActivity() {
 
 
 
-           val toast = Toast.makeText(this,R.string.correct_toast,Toast.LENGTH_LONG)
-           toast.setGravity(Gravity.TOP,0,300)
+            val toast = Toast.makeText(this,R.string.correct_toast,Toast.LENGTH_LONG)
+            toast.setGravity(Gravity.TOP,0,300)
             toast.show()
         }else{
-           val toast =Toast.makeText(this,R.string.incorrect_toast,Toast.LENGTH_LONG)
+            val toast =Toast.makeText(this,R.string.incorrect_toast,Toast.LENGTH_LONG)
             toast.setGravity(Gravity.TOP,0,300)
             toast.show()
         }

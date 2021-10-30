@@ -8,28 +8,30 @@ private const val TAG = "QuizViewModel"
 class QuizViewModel:ViewModel() {
 
     private val questionBank = listOf(
-        Question(R.string.first_question,false,false,"Eshraq"),
-        Question(R.string.second_question,false,false,"Eshraq"),
-        Question(R.string.third_question,true,true,"Anas"),
-        Question(R.string.forth_question,true,true,"Shuruq"),
-        Question(R.string.fifth_question,true,true,"Eshraq"),
+        Question(R.string.first_question,false,false,"by Anas"),
+        Question(R.string.second_question,false,false,"by Eshraq"),
+        Question(R.string.third_question,true,true,"by Eshraq"),
+        Question(R.string.forth_question,true,true,"by Shuruq"),
+        Question(R.string.fifth_question,true,true,"by Roya"),
 
 
-    )
+        )
 
-     var currentIndex = 0
+    var currentIndex = 0
+    var isCheater = false
+
 
     val questions:String
-    get()=questionBank[currentIndex].stractor
+        get()=questionBank[currentIndex].stractor
 
-    val textView="by:Eshraq"
+
 
 
     val currentQuestionText : Int
-                    get() =questionBank[currentIndex].textResId
+        get() =questionBank[currentIndex].textResId
 
     val currentQuestionAnswer:Boolean
-                            get()=questionBank[currentIndex].answer
+        get()=questionBank[currentIndex].answer
     var currentQuestionCheckAnswer:Boolean = questionBank[currentIndex].isSolved
 
 

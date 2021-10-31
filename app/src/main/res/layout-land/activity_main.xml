@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -11,7 +10,7 @@
 
     <TextView
         android:id="@+id/scoreTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="24dp"
@@ -22,12 +21,10 @@
 
     <TextView
         android:id="@+id/questionTextView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="24dp"
-        android:textColor="#000000"
-        android:textSize="20sp"
         tools:text="@string/firstQuestion" />
 
     <LinearLayout
@@ -37,24 +34,20 @@
 
         <Button
             android:id="@+id/trueButton"
-            style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"
             android:layout_weight="1"
-            android:text="@string/trueButton"
-            android:textColor="#263238" />
+            android:text="@string/trueButton" />
 
 
         <Button
             android:id="@+id/falseButton"
-            style="@style/Widget.AppCompat.Button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_weight="1"
-            android:text="@string/falseButton"
-            android:textColor="#000000" />
+            android:text="@string/falseButton" />
     </LinearLayout>
 
     <LinearLayout
@@ -69,7 +62,7 @@
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_weight="1"
-            android:contentDescription="TODO"
+            android:contentDescription="@string/previousBtnDes"
             android:drawablePadding="4dp"
             android:src="@drawable/arrow_left"
             app:srcCompat="@drawable/arrow_left"
@@ -83,15 +76,14 @@
             android:drawablePadding="4dp"
             android:src="@drawable/arrow_right"
             app:srcCompat="@drawable/arrow_right"
-            android:contentDescription="TODO" />
+            android:contentDescription="@string/nextBtnDes" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/InstrucNametextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:gravity="center"
         android:text="@string/instructorName" />
-
 </LinearLayout>
